@@ -19,4 +19,5 @@ Pod::Spec.new do |s|
   s.source                = { :git => 'https://github.com/sroddy/reactiveswift-composable-architecture.git', :tag => s.version.to_s }
   s.dependency 'ReactiveSwift'
   s.dependency 'CasePaths'
+  s.weak_frameworks = 'SwiftUI', 'Combine'
 end
