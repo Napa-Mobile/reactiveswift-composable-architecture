@@ -101,7 +101,7 @@ public final class ViewStore<State, Action> {
 
   #if canImport(Combine)
     @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-    public lazy var objectWillChange = ObservableObjectPublisher()
+    public var objectWillChange: ObservableObjectPublisher { ObservableObjectPublisher() }
   #endif
 
   let _send: (Action) -> Void
